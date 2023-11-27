@@ -24,8 +24,8 @@ pipeline {
                     // sh 'mvn war:war'
                     checkout scm
                     sh 'mvn clean package'
-                    sh 'rm -rf *.war'
-                    sh 'jar -cvf student_survey-1.war -C src/main/webapp/ .'
+                    // sh 'rm -rf *.war'
+                    // sh 'jar -cvf student_survey-1.war -C src/main/webapp/ .'
 
 
 
