@@ -48,7 +48,7 @@ pipeline {
                 script {
                     sh 'echo ${BUILD_TIMESTAMP}'
                     docker.withRegistry('',registryCredential) {
-                        def image = docker.build('mythprat/swe645hw3:'+tag, '.')
+                        def image = docker.build('sanjeev7/hw3:'+tag, '.')
                         docker.withRegistry('',registryCredential) {
                             image.push()
                         }
