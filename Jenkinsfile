@@ -5,7 +5,7 @@ def generateTag() {
 
 pipeline {
     environment {
-        registry = "mythprat/swe645hw3"
+        registry = "sanjeev7/hw3"
         registryCredential = 'docker_creds'
     }
     agent any
