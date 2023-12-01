@@ -66,7 +66,7 @@ pipeline {
                 sh 'ls -l'
                 sh 'ls ~'
                 sh 'sudo -u ubuntu kubectl --kubeconfig=/home/ubuntu/.kube/config.yaml cluster-info'
-                sh 'sudo -u ubuntu kubectl --kubeconfig=/home/ubuntu/.kube/config.yaml set image deployment/k8s-cluster container-0=sanjeev7/hw3:'+tag
+                sh 'sudo -u ubuntu kubectl --kubeconfig=/home/ubuntu/.kube/config.yaml set image deployment/hw3 container-0=sanjeev7/hw3:'+tag
             }
          }
       }
