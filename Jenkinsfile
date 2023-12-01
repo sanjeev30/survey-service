@@ -65,8 +65,8 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -l'
                 sh 'ls ~'
-                sh 'kubectl cluster-info'
-                sh 'kubectl --kubeconfig=/home/ubuntu/.kube/config.yaml set image deployment/k8s-cluster container-0=sanjeev7/hw3:'+tag
+                sh 'kubectl --kubeconfig=~/.kube/config.yaml cluster-info'
+                sh 'kubectl --kubeconfig=~/.kube/config.yaml set image deployment/k8s-cluster container-0=sanjeev7/hw3:'+tag
             }
          }
       }
